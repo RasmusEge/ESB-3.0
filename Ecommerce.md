@@ -18,8 +18,6 @@ This document contains datalayer tracking requirements for ecommerce events on h
 [1.12 Add Payment info](#add-payment-info) <br/>
 [1.13 Purchase](#purchase) <br/>
 
-
-
 ## Ecommerce tracking
 Detailed below are all ecommerce events and parameters for the checkout journey, from view item to purchase 
 
