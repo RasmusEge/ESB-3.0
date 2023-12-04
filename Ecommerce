@@ -31,12 +31,17 @@ Generic Google documentation: [https://developers.google.com/analytics/devguides
 items: [
     {
       item_id: "SKU_12345", //Example
-      item_name: "John doe",
+      item_name: "John doe", // dynamic value for name
       affiliation: "ESB",
       index: 0,
-      item_category: "ZOO-Kort",
-      item_category2: "Voksen",
-      price: 500.00, // The sale price is the per item list price (600.00) minus discount (100.00)
+      item_category: "brown", // dynamic value for eye color
+      item_category2: "strawberry blond", // dynamic value for hair color
+      item_category3: "180", // dynamic value for height
+      item_category4: "dutch/danish", // dynamic value for ethnicity
+      item_category5: "fair", // dynamic value for skintone 
+      item_category6: "libra", // dynamic value for Zodiac
+      item_category7: "D", // dynamic value for personality 
+      price: 5000.00, // Dynamic value for price 
       quantity: 2
     },
    
