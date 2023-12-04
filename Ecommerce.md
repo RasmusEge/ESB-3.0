@@ -14,7 +14,7 @@ This document contains datalayer tracking requirements for ecommerce events on h
 [1.8 Add Contact info](#add-contact-info) <br/>
 [1.9 Add Treatment info info](#add-treatment-info) <br/>
 [1.10 Add ZOO-card info](#add-zoo-card-info) <br/>
-[1.11 Add All info](#all-info-added) *<br/>
+[1.11 Add Shipping info](#add-shipping-info) <br/>
 [1.12 Add Payment info](#add-payment-info) <br/>
 [1.13 Purchase](#purchase) <br/>
 
