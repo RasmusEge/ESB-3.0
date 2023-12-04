@@ -30,8 +30,8 @@ Generic Google documentation: [https://developers.google.com/analytics/devguides
 ````javascript
 items: [
     {
-      item_id: "SKU_12345", //Example
-      item_name: "John doe", // dynamic value for name
+      item_id: "SKU_12345", //Example - must be uniqie ID for product
+      item_name: "Jatin IUI MOTO20+", // dynamic value for name
       affiliation: "ESB",
       index: 0,
       item_category: "brown", // dynamic value for eye color
@@ -40,41 +40,35 @@ items: [
       item_category4: "dutch/danish", // dynamic value for ethnicity
       item_category5: "fair", // dynamic value for skintone 
       item_category6: "libra", // dynamic value for Zodiac
-      item_category7: "D", // dynamic value for personality 
-      price: 5000.00, // Dynamic value for price 
+      item_category7: "ISJD", // dynamic value for personality 
+      price: 7312.75, // Dynamic value for price 
       quantity: 2
     },
    
     {
-      item_id: "SKU_12345",
-      item_name: "Billet_barn",
-      coupon: "Sommmer_sjov20",
-      discount: 100,
+      item_id: "SKU_123425", // dynamic ID-value for product
+      item_name: "Pregnancy slot", // dynamic value for name
+      affiliation: "ESB",
       index: 1,
-      item_category: "ZOO-billet",
-      item_category2: "Barn",
-      price: 200.00,
-      quantity: 2
-    }
-     {
-      item_id: "SKU_123456", // Id from backend 
-      item_name: "Boerne-foeselsdag", // name from backend 
-      discount: 500,
-      index: 2,
-      item_category: "ZOO-event",
-      item_category2: "Barn",
-      price: 275.00,
-      quantity: 12
+      price: 3259.37, // Dynamic value for price 
+      quantity: 1
+    }, 
+
+    {
+      item_id: "SKU_123415", // dynamic ID-value for product
+      item_name: "GeneXmatch", // dynamic value for name
+      affiliation: "ESB",
+      index: 1,
+      price: 3259.37, // Dynamic value for price 
+      quantity: 1
     }
          {
-      item_id: "SKU_12345343", // Id from backend 
-      item_name: "ZOO-camp 3 dage 10-12 aar", // name from backend 
-      discount: 500,
-      index: 3,
-      item_category: "ZOO-event",
-      item_category2: "Barn",
-      price: 275.00,
-      quantity: 12
+      item_id: "SKU_123415", // dynamic ID-value for product
+      item_name: "3 years storage", // dynamic value for name
+      affiliation: "ESB",
+      index: 1,
+      price: 3012.37, // Dynamic value for price 
+      quantity: 1
     }
 
 ]
