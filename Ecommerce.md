@@ -93,9 +93,11 @@ window.dataLayer.push({
 
 ## View Item
 
-#### Send event when a user a loads a productpage
-
-![image](https://github.com/RasmusEge/ZOO-CPH-Datalayer-implementaiton/assets/122262884/93581eb9-6bc7-41ca-a74c-c13800c7e643)
+#### Send event when a user a loads donorpage 1 (pagepath:"/product-detail/Jatin") and donorpage 2 (pagepath:"/add-to-cart")  
+Donerpage 1:
+![image](https://github.com/RasmusEge/ESB-3.0/assets/122262884/6dee9d8b-b217-4a1c-9234-097a50e4d033)
+Donorpage 2:
+![image](https://github.com/RasmusEge/ESB-3.0/assets/122262884/63301baa-8f57-40d7-892b-72ff5c9b56b6)
 
 ````javascript
 window.dataLayer = window.dataLayer || [];
@@ -110,9 +112,10 @@ window.dataLayer.push({
 ````
 
 ## Add to cart
-#### Send event when a user succesfully adds product to cart
+#### Send event when a user succesfully adds product to cart, either on donorpage 2 and/or when a user adds product in the cart
+![image](https://github.com/RasmusEge/ESB-3.0/assets/122262884/60d45635-6e71-413d-81eb-a80f606cf152)
+![image](https://github.com/RasmusEge/ESB-3.0/assets/122262884/e9cd5e37-9531-4e09-a4b0-422bf376228f)
 
-![image](https://github.com/RasmusEge/ZOO-CPH-Datalayer-implementaiton/assets/122262884/1ace11b2-1529-4b09-beb8-7e3f025b7b7f)
 
 ````javascript
 window.dataLayer = window.dataLayer || [];
