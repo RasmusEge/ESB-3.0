@@ -75,7 +75,8 @@ items: [
 ## Select item
 #### Send event when user clicks on a donor and when a user chooses a donor
 
-
+![image](https://github.com/RasmusEge/ESB-3.0/assets/122262884/529951fa-ef8d-4023-ae66-abf0c19e21e0)
+![image](https://github.com/RasmusEge/ESB-3.0/assets/122262884/eecbce72-80a8-45bf-b8f3-643885c0b8cb)
 
 ````javascript
 window.dataLayer = window.dataLayer || [];
