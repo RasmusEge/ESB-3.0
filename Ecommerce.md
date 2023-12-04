@@ -115,7 +115,6 @@ window.dataLayer.push({
 #### Send event when a user succesfully adds product to cart, either on donorpage 2 and/or when a user adds product in the cart
 ![image](https://github.com/RasmusEge/ESB-3.0/assets/122262884/60d45635-6e71-413d-81eb-a80f606cf152)
 ![image](https://github.com/RasmusEge/ESB-3.0/assets/122262884/e9cd5e37-9531-4e09-a4b0-422bf376228f)
-![image](https://github.com/RasmusEge/ESB-3.0/assets/122262884/58b8c048-167e-4581-a03a-816a4b6a3def)
 ![image](https://github.com/RasmusEge/ESB-3.0/assets/122262884/4a08a6db-27df-4ed7-a42e-9935f548c8c6)
 
 ````javascript
@@ -131,10 +130,11 @@ window.dataLayer.push({
 ````
 
 ## View cart
-#### Send event when user views cart
+#### Send event when user loads the cart page and/or when users clicks cart icon 
 
-![image](https://github.com/RasmusEge/ZOO-CPH-Datalayer-implementaiton/assets/122262884/22793fc5-bf2a-4111-a4c8-bd9ce2698828)
-![image](https://github.com/RasmusEge/ZOO-CPH-Datalayer-implementaiton/assets/122262884/e34ce553-9a61-49b2-8007-bad7f5458b93)
+![image](https://github.com/RasmusEge/ESB-3.0/assets/122262884/5e9ea481-7f45-48ec-ae87-c56e395640a7)
+![image](https://github.com/RasmusEge/ESB-3.0/assets/122262884/82220bc8-5464-4017-bf83-b6ea5b336e12)
+
 
 ````javascript
 window.dataLayer = window.dataLayer || [];
@@ -151,8 +151,8 @@ window.dataLayer.push({
 ## Remove from cart
 #### Send event when user removes product from cart
 
-![image](https://github.com/RasmusEge/ZOO-CPH-Datalayer-implementaiton/assets/122262884/b27d2317-bc44-4b80-b9d1-59d5a0d7a8cd)
-![image](https://github.com/RasmusEge/ZOO-CPH-Datalayer-implementaiton/assets/122262884/5afcf372-e860-401e-86fd-4ad120550bfb)
+![image](https://github.com/RasmusEge/ESB-3.0/assets/122262884/7af9b7da-c56f-4bcd-b29a-370902e015a1)
+![image](https://github.com/RasmusEge/ESB-3.0/assets/122262884/aab27769-a1aa-49a7-a183-80afd6942670)
 
 ````javascript
 window.dataLayer = window.dataLayer || [];
@@ -169,8 +169,7 @@ window.dataLayer.push({
 ## Begin checkout
 #### Send event when user starts checkout flow
 
-![image](https://github.com/RasmusEge/ZOO-CPH-Datalayer-implementaiton/assets/122262884/4aaaf1dc-7fd0-43e9-843c-d0140a0b70dc)
-![image](https://github.com/RasmusEge/ZOO-CPH-Datalayer-implementaiton/assets/122262884/fa4c5f61-c94d-4208-b799-0cff874914ef)
+![image](https://github.com/RasmusEge/ESB-3.0/assets/122262884/fd8f6b3f-fdac-42f0-91ac-2697e9494cb6)
 
 ````javascript
 window.dataLayer = window.dataLayer || [];
@@ -186,49 +185,42 @@ window.dataLayer.push({
 
 ## Add contact info
 #### Send event when user has successlfully added contact info 
-
-![image](https://github.com/RasmusEge/ZOO-CPH-Datalayer-implementaiton/assets/122262884/625787b1-5d43-4194-bdce-80738f875835)
+![image](https://github.com/RasmusEge/ESB-3.0/assets/122262884/acd6e3ae-1898-4fd0-ba16-46ee4adbf0ad)
 
 ````javascript
 window.dataLayer = window.dataLayer || [];
 window.dataLayer.push({
   event: 'add_contact_info',
-  ecommerce: {
-  items: [{ 
-           // insert items array with dynamic values   
-         }]    
-     }
-});
+ });
 ````
 
-## Add ZOO-event info
-#### Send event when user has successlfully added all Zoo-event info 
+## Add treatment info
+#### Send event when user has successlfully added all treatment info 
 
-![image](https://github.com/RasmusEge/ZOO-CPH-Datalayer-implementaiton/assets/122262884/9404f23f-8444-4cff-8c35-4dfb75590be1)
+![image](https://github.com/RasmusEge/ESB-3.0/assets/122262884/a785b2c5-aca6-45fe-b44c-282312d01321)
+
 
 ````javascript
 window.dataLayer = window.dataLayer || [];
 window.dataLayer.push({
-  event: 'add_zoo-event_info',
-  zoo-event: 'boernefoedselsdag, ZOO camp' // incert dynamic varible(s)
-  ecommerce: {
-  items: [{ 
-           // insert items array with dynamic values   
-         }]    
-     }
-});
+  event: 'add_treatment_info',
+  treatment_clinic: 'Juno CITY IVF' // incert dynamic value for clinic name
+  treatment_date: '20.12.24'  // incert dynamic value for treatment date
+);
 ````
 
-## Add ZOO-card info 
-#### Send event when user has successlfully added all Zoo-event info 
+## Add shipping info 
+#### Send event when user has successlfully added all shipping info 
 
-![image](https://github.com/RasmusEge/ZOO-CPH-Datalayer-implementaiton/assets/122262884/95109b40-c32d-49ba-959f-d38c9253aaf2)
+![image](https://github.com/RasmusEge/ESB-3.0/assets/122262884/bb8fc281-24e7-42fa-8424-c06188df385d)
+
 
 ````javascript
 window.dataLayer = window.dataLayer || [];
 window.dataLayer.push({
-  event: 'add_zoo-card_info',
+  event: 'add_shipping_info',
   ecommerce: {
+    shipping_tier: 'FedEx', // dynamic value for shiping provider (if static value is "standard" please use this)
   items: [{ 
            // insert items array with dynamic values   
          }]    
@@ -236,34 +228,18 @@ window.dataLayer.push({
 });
 ````
 
-## All info added
-#### Send event when user has successlfully added all info in all checkout forms exept for payment info
-
-![image](https://github.com/RasmusEge/ZOO-CPH-Datalayer-implementaiton/assets/122262884/95109b40-c32d-49ba-959f-d38c9253aaf2)
-
-````javascript
-window.dataLayer = window.dataLayer || [];
-window.dataLayer.push({
-  event: 'add_all-info',
-  ecommerce: {
-  items: [{ 
-           // insert items array with dynamic values   
-         }]    
-     }
-});
-````
 
 ## Add payment info 
 #### Send event when user has successfully added payment info
 
-![image](https://github.com/RasmusEge/ZOO-CPH-Datalayer-implementaiton/assets/122262884/c602a7e6-4196-431d-a6fb-2ca7d1c9423c)
+
 
 ````javascript
 window.dataLayer = window.dataLayer || [];
 window.dataLayer.push({
   event: 'add_payment_info',
     ecommerce: {
-    payment_type: "creditcard" // eller FF (forbrugsforeningenskort) 
+    payment_type: "creditcard" // dynamic value for payment method 
       items: [{ 
            // insert items array with dynamic values   
          }]    
@@ -272,31 +248,23 @@ window.dataLayer.push({
 ````
 
 ## Purchase 
-Send event when user has successfully made a purchase
+Send event when user has successfully made a purchase - if possible send in callback from paymentgateway provider. if not send when thank you page is loads  
 
-![image](https://github.com/RasmusEge/ZOO-CPH-Datalayer-implementaiton/assets/122262884/58c261b5-5b1c-453c-981f-035946b60aa0)
+![image](https://github.com/RasmusEge/ESB-3.0/assets/122262884/4efefdfc-bee8-4348-b149-b64a78269b7b)
+
 
 ````javascript
 window.dataLayer = window.dataLayer || [];
 window.dataLayer.push({
   event: 'purchase',
     ecommerce: {
-    currency: 'DKK',
-    value: 116.47,
-    tax: 7.18,
-    shipping: 10.00
-    transaction_id: 'p115-20202000',
-    coupon: 'gavekort', // if there
-      items: [{      
-        item_id: "SKU_12345",
-        item_name: "ZOO-kort_voksen",
-        coupon: "gavekort",
-        discount: 100, // The discount per item
-        index: 0,
-        item_category: "ZOO-Kort",
-        item_category2: "Voksen",
-        price: 500.00, // The sale price is the per item list price (600.00) minus discount (100.00)
-        quantity: 2 // The number of items sold
+    currency: 'DKK', // dynamic value
+    value: 116.47, // dynamic value
+    tax: 7.18, // dynamic value
+    shipping: 10.00 // dynamic value
+    transaction_id: 'p115-20202000', // dynamic uniquie value for order 
+    items: [{      
+        // insert items array with dynamic values   
         }]    
      }
 });
