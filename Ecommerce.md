@@ -115,7 +115,8 @@ window.dataLayer.push({
 #### Send event when a user succesfully adds product to cart, either on donorpage 2 and/or when a user adds product in the cart
 ![image](https://github.com/RasmusEge/ESB-3.0/assets/122262884/60d45635-6e71-413d-81eb-a80f606cf152)
 ![image](https://github.com/RasmusEge/ESB-3.0/assets/122262884/e9cd5e37-9531-4e09-a4b0-422bf376228f)
-
+![image](https://github.com/RasmusEge/ESB-3.0/assets/122262884/58b8c048-167e-4581-a03a-816a4b6a3def)
+![image](https://github.com/RasmusEge/ESB-3.0/assets/122262884/4a08a6db-27df-4ed7-a42e-9935f548c8c6)
 
 ````javascript
 window.dataLayer = window.dataLayer || [];
