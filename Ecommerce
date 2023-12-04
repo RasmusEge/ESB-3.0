@@ -1,5 +1,5 @@
-# Copenhagen ZOO tracking requirement document (WEB) Ecommerce 
-This document contains datalayer tracking requirements for ecommerce events on https://www.zoo.dk/
+# ESB 3.0 tracking requirement document (WEB) | Ecommerce 
+This document contains datalayer tracking requirements for ecommerce events on https://stage-frontend4.europeanspermbank.com (also to be used on the live site)
 
 
 ## Table of content
@@ -21,24 +21,18 @@ This document contains datalayer tracking requirements for ecommerce events on h
 
 
 ## Ecommerce tracking
-Detailed below are all ecommerce events and parameters for
-checkout 1 - without zoo-card in the basket
-checkout 2 - with a zoo-card in the basket
+Detailed below are all ecommerce events and parameters for the checkout journey, from view item to purchase 
 
-(*) Not sure the google API will accept these as ecommerce events, as they are custom and fall outside of the GA4 Ecommerce recommended event naming schema. If it isn't possible to collect these events in the ecommerce API, they should be sent as From_tracking events instead [https://github.com/RasmusEge/ZOO-CPH-Datalayer-implementaiton/blob/main/Form_tracking] 
-
-Google documentation: [https://developers.google.com/analytics/devguides/collection/ga4/ecommerce?client_type=gtag](https://developers.google.com/analytics/devguides/collection/ga4/ecommerce?client_type=gtag)
+Generic Google documentation: [https://developers.google.com/analytics/devguides/collection/ga4/ecommerce?client_type=gtag](https://developers.google.com/analytics/devguides/collection/ga4/ecommerce?client_type=gtag)
 
 ## Items array
 #### Items array is used throughout all ecommerce events and includes all items in a purchase for both chekout 1 and 2    
 ````javascript
 items: [
     {
-      item_id: "SKU_12345",
-      item_name: "ZOO-kort_voksen",
-      affiliation: "CPH-ZOO",
-      coupon: "Sommmer_sjov20",
-      discount: 100, // The discount per item
+      item_id: "SKU_12345", //Example
+      item_name: "John doe",
+      affiliation: "ESB",
       index: 0,
       item_category: "ZOO-Kort",
       item_category2: "Voksen",
