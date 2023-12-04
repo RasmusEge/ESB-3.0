@@ -1,20 +1,16 @@
 # Custom Events
 ## login 
 When a user logs in, the following event should be dispatched:
- 
-![image.png](/.attachments/image-855dda4b-4324-46e8-9968-d7400de7d8ba.png)
 
 ````
 dataLayer.push({
      event: 'login'
-     eventCategory: 'Login',
+     user_id: 122112112 // dynamic value for specific user 
      eventAction: 'Logged in'
  }); 
 ````
-Userstate should be added to datalayer at all times 
 
-<span style="color:red">🛈 **New comment:** This is currently not implemented:
-</span> @<Apostolos Lalos> 
+Userstate should be added to datalayer at all times 
 
 If user is logged in 
 
