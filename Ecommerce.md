@@ -111,7 +111,7 @@ window.dataLayer.push({
 
 ````
 ## View item list
-#### Send event when user views a product page (donor page) on the site  
+#### Send event when user views a product page (donor page) on the site. not on 3.0 site
 
 ````
 window.dataLayer = window.dataLayer || [];
