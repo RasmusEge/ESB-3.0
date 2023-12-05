@@ -8,17 +8,17 @@ This document contains datalayer tracking requirements for ecommerce events on h
 [1.2 View promotion](#view-promotion) <br/>
 [1.3 Select promotion](#select-promotion) <br/>
 [1.4 View item list](#view-item-list) <br/>
-[1.2 Select Item](#select-item) <br/>
-[1.3 View Item](#view-item) <br/>
-[1.4 Add to cart](#add-to-cart) <br/>
-[1.5 View cart](#view-cart) <br/>
-[1.6 Remove from cart](#remove-from-cart) <br/>
-[1.7 Begin checkout](#begin-checkout) <br/>
-[1.8 Add Contact info](#add-contact-info) <br/>
-[1.9 Add Treatment info info](#add-treatment-info) <br/>
-[1.10 Add Shipping info](#add-shipping-info) <br/>
-[1.11 Add Payment info](#add-payment-info) <br/>
-[1.12 Purchase](#purchase) <br/>
+[1.5 Select Item](#select-item) <br/>
+[1.6 View Item](#view-item) <br/>
+[1.7 Add to cart](#add-to-cart) <br/>
+[1.8 View cart](#view-cart) <br/>
+[1.9 Remove from cart](#remove-from-cart) <br/>
+[1.10 Begin checkout](#begin-checkout) <br/>
+[1.11 Add Contact info](#add-contact-info) <br/>
+[1.12 Add Treatment info info](#add-treatment-info) <br/>
+[1.13 Add Shipping info](#add-shipping-info) <br/>
+[1.14 Add Payment info](#add-payment-info) <br/>
+[1.15 Purchase](#purchase) <br/>
 
 ## Ecommerce tracking
 Detailed below are all ecommerce events and parameters for the checkout journey, from view item to purchase 
