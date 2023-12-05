@@ -1,4 +1,4 @@
-# ESB 3.0 tracking requirement document (WEB) | Ecommerce 
+# ESB 4.0 tracking requirement document (WEB) | Ecommerce 
 This document contains datalayer tracking requirements for ecommerce events on https://stage-frontend4.europeanspermbank.com (also to be used on the live site)
 
 
@@ -71,6 +71,15 @@ items: [
 ]
 ````
 
+## View promotion
+#### Send event when user see a promotion (fx Banner) on the site  
+````
+window.dataLayer = window.dataLayer || [];
+window.dataLayer.push({
+  event: 'view_promotion',
+  ecommerce: {
+    items: [{
+````
 ## Select item
 #### Send event when user clicks on a donor and when a user chooses a donor
 
