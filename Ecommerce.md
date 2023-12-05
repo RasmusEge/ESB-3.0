@@ -5,6 +5,9 @@ This document contains datalayer tracking requirements for ecommerce events on h
 ## Table of content
 [**1. Ecommerce tracking**](#ecommerce-tracking) <br/>
 [1.1 Items array](#items-array) <br/>
+[1.2 View promotion](#view-promotion) <br/>
+[1.3 Select promotion](#select-promotion) <br/>
+[1.4 View item list](#view-item-list) <br/>
 [1.2 Select Item](#select-item) <br/>
 [1.3 View Item](#view-item) <br/>
 [1.4 Add to cart](#add-to-cart) <br/>
@@ -73,13 +76,57 @@ items: [
 
 ## View promotion
 #### Send event when user see a promotion (fx Banner) on the site  
+
 ````
 window.dataLayer = window.dataLayer || [];
 window.dataLayer.push({
   event: 'view_promotion',
   ecommerce: {
+    creative_slot: "herobannermodule", // on 3.0 site, a value used is: "heroBannerModule_row0_module0"
+    promotion_id: "P_12345", // if possible 
+    promotion_name: "Summer Sale", // on 3.0 site the value used is: "/en-int#heroBannerModule_row0_module0"  
     items: [{
+                // insert items array with dynamic values if any
+          }]    
+     }
+});
+
 ````
+## Select promotion
+#### Send event when user clicks on a promotion (fx Banner) on the site  
+
+````
+window.dataLayer = window.dataLayer || [];
+window.dataLayer.push({
+  event: 'select_promotion',
+  ecommerce: {
+    creative_slot: "herobannermodule", // on 3.0 site, a value used is: "heroBannerModule_row0_module0"
+    promotion_id: "P_12345", // if possible 
+    promotion_name: "Summer Sale", // on 3.0 site the value used is: "/en-int#heroBannerModule_row0_module0"  
+    items: [{
+                // insert items array with dynamic values if any
+          }]    
+     }
+});
+
+````
+## View item list
+#### Send event when user views a product page (donor page) on the site  
+
+````
+window.dataLayer = window.dataLayer || [];
+window.dataLayer.push({
+  event: 'view_item_list',
+  ecommerce: {
+        items: [{
+                // insert items array with dynamic values 
+          }]    
+     }
+});
+
+````
+
+
 ## Select item
 #### Send event when user clicks on a donor and when a user chooses a donor
 
