@@ -75,7 +75,9 @@ items: [
 ````
 
 ## View promotion
-#### Send event when user see a promotion (fx Banner) on the site  
+#### Send event when user see a promotion (fx Bannerog card) on the site 
+![image](https://github.com/RasmusEge/ESB-4.0/assets/122262884/89fdaacc-294f-402f-a90a-3de223801081)
+![image](https://github.com/RasmusEge/ESB-4.0/assets/122262884/2094da67-fad3-4583-9a9f-236014a91e9b)
 
 ````
 window.dataLayer = window.dataLayer || [];
@@ -94,7 +96,8 @@ window.dataLayer.push({
 ````
 ## Select promotion
 #### Send event when user clicks on a promotion (fx Banner) on the site  
-
+![image](https://github.com/RasmusEge/ESB-4.0/assets/122262884/a5920cd4-f48e-4a79-aabc-1294fcea95fa)
+![image](https://github.com/RasmusEge/ESB-4.0/assets/122262884/2094da67-fad3-4583-9a9f-236014a91e9b)
 ````
 window.dataLayer = window.dataLayer || [];
 window.dataLayer.push({
@@ -112,6 +115,7 @@ window.dataLayer.push({
 ````
 ## View item list
 #### Send event when user views a product page (donor page) on the site. not on 3.0 site
+![image](https://github.com/RasmusEge/ESB-4.0/assets/122262884/2f317362-eb0f-44de-840e-85a65481c338)
 
 ````
 window.dataLayer = window.dataLayer || [];
