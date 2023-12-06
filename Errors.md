@@ -1,4 +1,4 @@
-# ESB tracking requirement document (WEB) - Errors
+# ESB 4.0 tracking requirement document (WEB) - Errors
 This document contains tracking requirements for error events for https://www.zoo.dk/
 
 ## Table of content
