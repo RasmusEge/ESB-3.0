@@ -11,7 +11,7 @@ Part1: Paste this code as high in the <head> of the page as possible:
 new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
 j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
-})(window,document,'script','dataLayer','GTM-MXM65VH');</script>
+})(window,document,'script','dataLayer','GTM-WP39R2K');</script>
 <!-- End Google Tag Manager -->
 ````
 Part2:  Additionally, paste this code immediately after the opening <body> tag:
