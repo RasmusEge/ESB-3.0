@@ -17,8 +17,8 @@ When a user creates an account, the following event should be dispatched:
 
 ````
 dataLayer.push({
-     event: 'create_account'
-     user_id: 122112112 // dynamic value for specific user added when user creates account the first time (this is already implemented on the current site - Hiroshi did the implementation) - users_id should be added to datalayer at all times for all events - if not there simply provide blanck 
+     event: 'create_account' // event on the current site is called "free signup" where the is id passed with an ecommerce event, that should be necessarry on this site  
+     user_id: CID-122112112 // dynamic value for specific user added when user creates account the first time (this is already implemented on the current site - Hiroshi did the implementation) - users_id should be added to datalayer at all times for all events - if not there simply provide blanck 
     login_status: 'Logged in' // Userstate should be added to datalayer at all times for all events 
  }); 
 ````
