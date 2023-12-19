@@ -17,8 +17,9 @@ This document contains datalayer tracking requirements for ecommerce events on h
 [1.11 Add Contact info](#add-contact-info) <br/>
 [1.12 Add Treatment info info](#add-treatment-info) <br/>
 [1.13 Add Shipping info](#add-shipping-info) <br/>
-[1.14 Add Payment info](#add-payment-info) <br/>
-[1.15 Purchase](#purchase) <br/>
+[1.14 View order summary](#view-order-summary) <br/>
+[1.15 Add Payment info](#add-payment-info) <br/>
+[1.16 Purchase](#purchase) <br/>
 
 ## Ecommerce tracking
 Detailed below are all ecommerce events and parameters for the checkout journey, from view item to purchase 
@@ -286,11 +287,21 @@ window.dataLayer.push({
      }
 });
 ````
+## View order summary
+#### Send when user views order summary page
+![image](https://github.com/RasmusEge/ESB-4.0-Datalayer-documentation/assets/122262884/6ab2fa18-7857-478b-89d4-20acdab3d7fa)
 
+````javascript
+window.dataLayer = window.dataLayer || [];
+window.dataLayer.push({
+  event: 'view_order_summary',
+});
+````
 
 ## Add payment info 
 #### Send event when user has successfully added payment info
 
+![image](https://github.com/RasmusEge/ESB-4.0-Datalayer-documentation/assets/122262884/7e16f2e9-2e8b-4285-8e0c-1bd314490a8b)
 
 
 ````javascript
