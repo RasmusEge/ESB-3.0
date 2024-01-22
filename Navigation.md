@@ -5,7 +5,7 @@ Topbar navigation
 ````javascript
 dataLayer.push({
      event: 'navigationTracking',
-     navigation_level: 'Topbar', // example but shoiuld be something similar
+     navigation_level: 'Topbar', // example but should be something similar
      navigation_item: 'Menu item name', // insert dynamic value
     
  }); 
