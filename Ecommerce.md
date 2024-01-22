@@ -89,11 +89,11 @@ window.dataLayer.push({
 
 ## View Item
 
-#### Send event when a user a loads donorpage 1 (pagepath:"/product-detail/Jatin")   
-Donerpage 1:
-![image](https://github.com/RasmusEge/ESB-3.0/assets/122262884/6dee9d8b-b217-4a1c-9234-097a50e4d033)
-Donorpage 2:
-![image](https://github.com/RasmusEge/ESB-3.0/assets/122262884/63301baa-8f57-40d7-892b-72ff5c9b56b6)
+#### Send event when a user a loads donorpage "Straw selection" 
+
+Donorpage "Straw selection":
+![image](https://github.com/RasmusEge/ESB-4.0-Datalayer-documentation/assets/122262884/7f45da54-95ac-407b-bd29-5fb8c8d7da10)
+
 
 ````javascript
 window.dataLayer = window.dataLayer || [];
