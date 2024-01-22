@@ -108,8 +108,9 @@ window.dataLayer.push({
 ````
 
 ## Add to cart
-#### Send event when a user succesfully adds product to cart, either on donorpage 2 and/or when a user adds product in the cart
-![image](https://github.com/RasmusEge/ESB-3.0/assets/122262884/60d45635-6e71-413d-81eb-a80f606cf152)
+#### Send event when a user succesfully adds product to cart, either on Donorpage "Additional Products" and/or when a user adds product in the cart dropdown menu
+
+![image](https://github.com/RasmusEge/ESB-4.0-Datalayer-documentation/assets/122262884/27e0f774-5282-42b6-9b27-1d9fba4a2839)
 ![image](https://github.com/RasmusEge/ESB-3.0/assets/122262884/e9cd5e37-9531-4e09-a4b0-422bf376228f)
 ![image](https://github.com/RasmusEge/ESB-3.0/assets/122262884/4a08a6db-27df-4ed7-a42e-9935f548c8c6)
 
