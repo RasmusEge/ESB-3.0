@@ -73,6 +73,7 @@ items: [
 #### Send event when user when a user chooses a donor
 
 ![image](https://github.com/RasmusEge/ESB-3.0/assets/122262884/eecbce72-80a8-45bf-b8f3-643885c0b8cb)
+![image](https://github.com/RasmusEge/ESB-4.0-Datalayer-documentation/assets/122262884/a15dc5e4-21ba-434e-bb13-3f50b9621f01)
 
 ````javascript
 window.dataLayer = window.dataLayer || [];
