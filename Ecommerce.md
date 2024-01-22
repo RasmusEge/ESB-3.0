@@ -5,21 +5,15 @@ This document contains datalayer tracking requirements for ecommerce events on h
 ## Table of content
 [**1. Ecommerce tracking**](#ecommerce-tracking) <br/>
 [1.1 Items array](#items-array) <br/>
-[1.2 View promotion](#view-promotion) <br/>
-[1.3 Select promotion](#select-promotion) <br/>
-[1.4 View item list](#view-item-list) <br/>
-[1.5 Select Item](#select-item) <br/>
-[1.6 View Item](#view-item) <br/>
-[1.7 Add to cart](#add-to-cart) <br/>
-[1.8 View cart](#view-cart) <br/>
-[1.9 Remove from cart](#remove-from-cart) <br/>
-[1.10 Begin checkout](#begin-checkout) <br/>
-[1.11 Add Contact info](#add-contact-info) <br/>
-[1.12 Add Treatment info info](#add-treatment-info) <br/>
-[1.13 Add Shipping info](#add-shipping-info) <br/>
-[1.14 View order summary](#view-order-summary) <br/>
-[1.15 Add Payment info](#add-payment-info) <br/>
-[1.16 Purchase](#purchase) <br/>
+[1.2 Select Item](#select-item) <br/>
+[1.4 View Item](#view-item) <br/>
+[1.5 Add to cart](#add-to-cart) <br/>
+[1.6 View cart](#view-cart) <br/>
+[1.7 Remove from cart](#remove-from-cart) <br/>
+[1.8 Begin checkout](#begin-checkout) <br/>
+[1.9 Add Shipping info](#add-shipping-info) <br/>
+[1.10 Add Payment info](#add-payment-info) <br/>
+[1.11 Purchase](#purchase) <br/>
 
 ## Ecommerce tracking
 Detailed below are all ecommerce events and parameters for the checkout journey, from view item to purchase 
@@ -74,63 +68,6 @@ items: [
 
 ]
 ````
-
-## View promotion
-#### Send event when user see a promotion (fx Bannerog card) on the site 
-![image](https://github.com/RasmusEge/ESB-4.0/assets/122262884/89fdaacc-294f-402f-a90a-3de223801081)
-![image](https://github.com/RasmusEge/ESB-4.0/assets/122262884/2094da67-fad3-4583-9a9f-236014a91e9b)
-
-````
-window.dataLayer = window.dataLayer || [];
-window.dataLayer.push({
-  event: 'view_promotion',
-  ecommerce: {
-    creative_slot: "herobannermodule", // on 3.0 site, a value used is: "heroBannerModule_row0_module0"
-    promotion_id: "P_12345", // if possible 
-    promotion_name: "Summer Sale", // on 3.0 site the value used is: "/en-int#heroBannerModule_row0_module0"  
-    items: [{
-                // insert items array with dynamic values if any
-          }]    
-     }
-});
-
-````
-## Select promotion
-#### Send event when user clicks on a promotion (fx Banner) on the site  
-![image](https://github.com/RasmusEge/ESB-4.0/assets/122262884/a5920cd4-f48e-4a79-aabc-1294fcea95fa)
-![image](https://github.com/RasmusEge/ESB-4.0/assets/122262884/2094da67-fad3-4583-9a9f-236014a91e9b)
-````
-window.dataLayer = window.dataLayer || [];
-window.dataLayer.push({
-  event: 'select_promotion',
-  ecommerce: {
-    creative_slot: "herobannermodule", // on 3.0 site, a value used is: "heroBannerModule_row0_module0"
-    promotion_id: "P_12345", // if possible 
-    promotion_name: "Summer Sale", // on 3.0 site the value used is: "/en-int#heroBannerModule_row0_module0"  
-    items: [{
-                // insert items array with dynamic values if any
-          }]    
-     }
-});
-
-````
-## View item list
-#### Send event when user views a product page (donor page) on the site. not on 3.0 site
-![image](https://github.com/RasmusEge/ESB-4.0/assets/122262884/2f317362-eb0f-44de-840e-85a65481c338)
-
-````
-window.dataLayer = window.dataLayer || [];
-window.dataLayer.push({
-  event: 'view_item_list',
-  ecommerce: {
-        items: [{
-                // insert items array with dynamic values 
-          }]    
-     }
-});
-
-````
-
 
 ## Select item
 #### Send event when user clicks on a donor and when a user chooses a donor
@@ -243,32 +180,6 @@ window.dataLayer.push({
 });
 ````
 
-## Add contact info
-#### Send event when user has successlfully added contact info 
-![image](https://github.com/RasmusEge/ESB-3.0/assets/122262884/acd6e3ae-1898-4fd0-ba16-46ee4adbf0ad)
-
-````javascript
-window.dataLayer = window.dataLayer || [];
-window.dataLayer.push({
-  event: 'add_contact_info',
- });
-````
-
-## Add treatment info
-#### Send event when user has successlfully added all treatment info 
-
-![image](https://github.com/RasmusEge/ESB-3.0/assets/122262884/a785b2c5-aca6-45fe-b44c-282312d01321)
-
-
-````javascript
-window.dataLayer = window.dataLayer || [];
-window.dataLayer.push({
-  event: 'add_treatment_info',
-  treatment_clinic: 'Juno CITY IVF' // incert dynamic value for clinic name
-  treatment_date: '20.12.24'  // incert dynamic value for treatment date
-);
-````
-
 ## Add shipping info 
 #### Send event when user has successlfully added all shipping info 
 
@@ -285,16 +196,6 @@ window.dataLayer.push({
            // insert items array with dynamic values   
          }]    
      }
-});
-````
-## View order summary
-#### Send when user views order summary page
-![image](https://github.com/RasmusEge/ESB-4.0-Datalayer-documentation/assets/122262884/6ab2fa18-7857-478b-89d4-20acdab3d7fa)
-
-````javascript
-window.dataLayer = window.dataLayer || [];
-window.dataLayer.push({
-  event: 'view_order_summary',
 });
 ````
 
@@ -332,7 +233,7 @@ window.dataLayer.push({
     value: 116.47, // dynamic value
     tax: 7.18, // dynamic value
     shipping: 10.00 // dynamic value
-    transaction_id: 'p115-20202000', // dynamic uniquie value for order 
+    transaction_id: 'p115-20202000', // dynamic unique value for order 
     items: [{      
         // insert items array with dynamic values   
         }]    
