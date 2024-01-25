@@ -41,17 +41,4 @@ login_status: 'not logged in'
  }); 
 ````
 
-## Signup for newsletter
 
-When the user  signs up for the newsletter, the following event should be dispatched:
-![image.png](/.attachments/image-7b7e0d09-64e7-4022-9a65-357bf2845083.png)
-
-````
-dataLayer.push({
-     event: 'newsletter signup'
-     eventCategory: 'Signup',
-     eventAction: 'newsletter',
-     login_status: 'not logged in'
-
- }); 
-````
