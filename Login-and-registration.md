@@ -7,7 +7,7 @@ When a user logs in, the following event should be dispatched:
 ````
 dataLayer.push({
      event: 'login'
-     user_id: 122112112 // dynamic value for specific user added when user creates account the first time (this is already implemented on the current site - Hiroshi did the implementation) - users_id should be added to datalayer at all times for all events - if not there simply provide blanc 
+     user_id: CID-122112112 // dynamic value for specific user added when user creates account the first time (this is already implemented on the current site - Hiroshi did the implementation) - users_id should be added to datalayer at all times for all events - if not there simply provide blanc 
      login_status: 'Logged in' // Userstate should be added to datalayer at all times for all events 
  }); 
 ````
