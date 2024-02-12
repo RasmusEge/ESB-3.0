@@ -23,7 +23,7 @@ dataLayer.push({
  }); 
 ````
 
-Userstate should be added to datalayer at all times 
+Userstate and user_id should be added to datalayer at all times 
 
 If user is logged in 
 
